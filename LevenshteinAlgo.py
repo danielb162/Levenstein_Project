@@ -3,7 +3,7 @@ import pprint # Used for debugging
 
 '''
 Author: Daniel Busuttil
-Date: 04 June 2018 - 
+Date: 01 June 2018 - 02 June 2018
 Algorithm written in Python to act as a component in an auto-correct program. In this algo, I've chosen to have insertion and deletion
 operations cost 1 while substitution operations cost 2
 '''
@@ -13,7 +13,6 @@ in_1 = input("Enter the first string:\n")
 dim_1 = len(in_1) # == max j value
 in_2 = input("Enter the second string:\n")
 dim_2 = len(in_2) # == max i value
-arr_dim = max(len(in_1), len(in_2))
 
 # Creates -@ run-time- an empty 2D list, sized ' dim_2 + 2 x dim_1 + 2 '
 lev_arr = [  [ ' ' for j in range(0, dim_1 + 2) ]  for i in range(0, dim_2 + 2) ]
